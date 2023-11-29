@@ -1,0 +1,498 @@
+@import "./variables";
+
+.Testimonial {
+    background-color: $bg-color2;
+
+    & .Testimonialpage {
+        margin: 0px 100px;
+        padding: 144px 0px;
+        background-color: $bg-color;
+        @include Displayflex($flex,$JustifyCenter,$alignCenter,0);
+        flex-direction: column;
+        background-color: $bg-color2;
+
+        & .sec_headline {
+            color: $text_color2;
+            width: auto;
+            margin-bottom: 10px;
+            @include Displayflex($flex,$JustifyCenter,$alignCenter,$flexWrap);
+
+            // background-color: aqua;
+        }
+
+        & .sec_h2 {
+            font-family: $font;
+            color: $text_color;
+            // background-color: aqua;
+            width: 60%;
+            font-size: 27px;
+            font-weight: 600-semibold;
+
+            h2 {
+                // background-color: burlywood;
+                text-align: center;
+                overflow: hidden;
+                margin-bottom: 50px;
+
+                span {
+                    color: $primary_text_color;
+                    font-style: italic;
+                    font-family: IBM Plex Serif;
+                    font-weight: 600-semibold;
+
+                }
+            }
+        }
+
+        & .container {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            width: 100%;
+            gap: 30px;
+            // background-color: rgb(255, 253, 127);
+            & .box1:hover {
+                box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.2);
+            }
+            & .box1 {
+                position: relative;
+                padding: 40px;
+                width: auto;
+                height: auto;
+                background-color: $bg-color;
+
+                & .star_icons {
+                    color: orange;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    // background-color: brown;
+                    @include Displayflex($flex,$JustifyflexStart,$alignCenter,0);
+
+                    gap: 5px;
+                }
+
+                & .box1_p {
+                    color: $text_color2;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+
+                }
+
+                & .box1_profile {
+                    // background-color: brown;
+                    display: flex;
+                    gap: 20px;
+
+                    & .box1_profile_img {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            background-color: aqua;
+                            border-radius: 50px;
+                        }
+                    }
+
+                    & .box1_profile_name {
+                        @include Displayflex($flex,$Justifyspace-around,0,0);
+
+                        flex-direction: column;
+
+                        h3 {
+                            color: $text_color;
+                        }
+
+                        p {
+                            color: $text_color2;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            & .box2:hover {
+                box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+            }
+            & .box2 {
+                
+                position: relative;
+                top: 30px;
+                padding: 40px;
+                width: auto;
+                height: auto;
+                background-color: $bg-color;
+
+                & .star_icons {
+                    color: orange;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    // background-color: brown;
+                    @include Displayflex($flex,$JustifyflexStart,$alignCenter,0);
+
+                    gap: 5px;
+                }
+
+                & .box2_p {
+                    color: $text_color2;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+
+                }
+
+                & .box2_profile {
+                    // background-color: brown;
+                    display: flex;
+                    gap: 20px;
+
+                    & .box2_profile_img {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            background-color: aqua;
+                            border-radius: 50px;
+                        }
+                    }
+
+                    & .box2_profile_name {
+                        @include Displayflex($flex,$Justifyspace-around,0,0);
+                        flex-direction: column;
+
+                        h3 {
+                            color: $text_color;
+                        }
+
+                        p {
+                            color: $text_color2;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            & .box3:hover {
+                box-shadow: -4px 4px 10px 1px rgba(0, 0, 0, 0.2);
+            }
+            & .box3 {
+                padding: 40px;
+                width: auto;
+                height: auto;
+                background-color: $bg-color;
+
+                & .star_icons {
+                    color: orange;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    // background-color: brown;
+                    @include Displayflex($flex,$JustifyflexStart,$alignCenter,0);
+
+                    gap: 5px;
+                }
+
+                & .box3_p {
+                    color: $text_color2;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+
+                }
+
+                & .box3_profile {
+                    // background-color: brown;
+                    display: flex;
+                    gap: 20px;
+
+                    & .box3_profile_img {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            background-color: aqua;
+                            border-radius: 50px;
+                        }
+                    }
+
+                    & .box3_profile_name {
+                        @include Displayflex($flex,$Justifyspace-around,0,0);
+                        flex-direction: column;
+
+                        h3 {
+                            color: $text_color;
+                        }
+
+                        p {
+                            color: $text_color2;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            & .box4:hover {
+                box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.2);
+            }
+            & .box4 {
+                padding: 40px;
+                width: auto;
+                height: auto;
+                background-color: $bg-color;
+
+                & .star_icons {
+                    color: orange;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    // background-color: brown;
+                    @include Displayflex($flex,$JustifyflexStart,$alignCenter,0);
+
+                    gap: 5px;
+                }
+
+                & .box4_p {
+                    color: $text_color2;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+
+                }
+
+                & .box4_profile {
+                    // background-color: brown;
+                    display: flex;
+                    gap: 20px;
+
+                    & .box4_profile_img {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            background-color: aqua;
+                            border-radius: 50px;
+                        }
+                    }
+
+                    & .box4_profile_name {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+
+                        h3 {
+                            color: $text_color;
+                        }
+
+                        p {
+                            color: $text_color2;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            & .box5:hover {
+                box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+            }
+            & .box5 {
+                position: relative;
+                top: 30px;
+                padding: 40px;
+                width: auto;
+                height: auto;
+                background-color: $bg-color;
+
+                & .star_icons {
+                    color: orange;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    // background-color: brown;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 5px;
+                }
+
+                & .box5_p {
+                    color: $text_color2;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+
+                }
+
+                & .box5_profile {
+                    // background-color: brown;
+                    display: flex;
+                    gap: 20px;
+
+                    & .box5_profile_img {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            background-color: aqua;
+                            border-radius: 50px;
+                        }
+                    }
+
+                    & .box5_profile_name {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+
+                        h3 {
+                            color: $text_color;
+                        }
+
+                        p {
+                            color: $text_color2;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            & .box6:hover {
+                box-shadow: -4px 4px 10px 1px rgba(0, 0, 0, 0.2);
+            }
+            & .box6 {
+                padding: 40px;
+                width: auto;
+                height: auto;
+                background-color: $bg-color;
+
+                & .star_icons {
+                    color: orange;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    // background-color: brown;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 5px;
+                }
+
+                & .box6_p {
+                    color: $text_color2;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+                }
+
+                & .box6_profile {
+                    // background-color: brown;
+                    display: flex;
+                    gap: 20px;
+
+                    & .box6_profile_img {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            background-color: aqua;
+                            border-radius: 50px;
+                        }
+                    }
+
+                    & .box6_profile_name {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+
+                        h3 {
+                            color: $text_color;
+                        }
+
+                        p {
+                            color: $text_color2;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+//.....................desktop-1280.......................//
+@include breakpoints ($max_w, $breakpoint-large) {
+    .Testimonial {
+        & .Testimonialpage {
+            margin: 0px 50px;
+        }
+    }
+
+}
+
+//.....................tablet-980.......................//
+@include breakpoints ($max_w, $breakpoint-medium) {
+    .Testimonial {
+        & .Testimonialpage {
+            margin: 0px 5px;
+
+            & .sec_h2 {
+                width: 70%;
+            }
+
+            & .container {
+                grid-template-columns: auto auto;
+
+                & .box2 {
+                    position: static;
+                }
+
+                & .box5 {
+                    position: static;
+
+                }
+            }
+        }
+    }
+
+}
+
+//.....................mobiles-768.......................//
+@include breakpoints ($max_w, $breakpoint-small) {
+    .Testimonial {
+        & .Testimonialpage {
+
+            & .sec_h2 {
+                width: 100%;
+
+                // background-color: aqua;
+                h2 {
+                    overflow: hidden;
+                }
+            }
+
+            & .container {
+                grid-template-columns: auto;
+
+                & .box1 {
+                    & .box1_p {
+                        p {
+                            overflow: hidden;
+                            // background-color: aquamarine;
+                        }
+                    }
+                }
+
+                & .box2 {
+                    position: static;
+                }
+
+                & .box5 {
+                    position: static;
+
+                }
+            }
+        }
+    }
+
+}
+
+
+//.....................small-mobiles-420.......................//
+@include breakpoints ($max_w, $breakpoint-Xsmall) {
+     .box1_profile{
+        flex-direction: column;
+    }
+     .box2_profile{
+        flex-direction: column;
+    }
+     .box3_profile{
+        flex-direction: column;
+    }
+     .box4_profile{
+        flex-direction: column;
+    }
+     .box5_profile{
+        flex-direction: column;
+    }
+     .box6_profile{
+        flex-direction: column;
+    }
+}

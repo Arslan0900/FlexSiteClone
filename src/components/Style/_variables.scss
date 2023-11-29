@@ -1,0 +1,38 @@
+$bg-color: rgba(252, 252, 253, 1);
+$bg-color2: rgba(240, 240, 248, 1);
+$bg_color3:#343F52;
+$font: spacegrotest;
+$breakpoint-Xsmall: 420px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 980px;
+$breakpoint-large: 1280px;
+$breakpoint-Xlarge: 1500px;
+$font : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$md : 920px;
+$min_w : min-width;
+$max_w : max-width;
+$text_color:rgba(52, 63, 82, 1);
+$text_color2:rgba(96, 105, 123, 1);
+$primary_text_color:rgba(70, 115, 217, 1);
+$secondary_color:rgba(96, 93, 186, 1);
+$flex:flex;
+$JustifyCenter:center;
+$JustifyflexStart:flex-start;
+$JustifyflexEnd:flex-end;
+$Justifyspace-between:space-between;
+$Justifyspace-around:space-around;
+$alignCenter:center;
+$flexWrap:wrap;
+$flexNoWrap:nowrap;
+
+@mixin Displayflex ($flex,$JustifyCenter,$alignCenter,$flexWrap){
+    display: $flex;
+    justify-content: $JustifyCenter;
+    align-items: $alignCenter;
+      flex-wrap: $flexWrap;
+  }
+  @mixin breakpoints($width,$point){
+      @media only screen and (#{$width}:$point) {
+          @content   
+      }
+  }

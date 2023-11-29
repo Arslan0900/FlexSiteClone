@@ -1,0 +1,177 @@
+@import "./variables";
+
+.services {
+    padding: 0px 100px;
+    background-color: rgb(250, 247, 247);
+
+    & .container {
+        width: 100%;
+        height: 100%;
+        padding: 144px 0px;
+        @include Displayflex($flex,$JustifyCenter,0,0);
+        gap: 100px;
+
+        & .left_box {
+            display: inline-block;
+            position: sticky;
+            // background-color: burlywood;
+            width: 100%;
+            height: fit-content;
+            top: 144px;
+
+            & .sec_headline {
+                color: $text_color2;
+                width: auto;
+                margin-bottom: 10px;
+    @include Displayflex($flex,$JustifyflexStart,$alignCenter,$flexWrap);
+            }
+
+            & .sec_h2 {
+                font-family: $font;
+                // color: $text_color;
+                // background-color: aqua;
+                width: 100%;
+                font-size: 27px;
+                font-weight: 600-semibold;
+
+                h2 {
+                    // background-color: burlywood;
+                    // text-align: center;
+                    overflow: hidden;
+                    margin-bottom: 50px;
+
+                    span {
+                        color: $primary_text_color;
+                        font-style: italic;
+                        font-family: IBM Plex Serif;
+                        font-weight: 600-semibold;
+
+                    }
+                }
+            }
+
+            & .sec_p {
+                color: $text_color2;
+                font-size: 18px;
+                margin-bottom: 25px;
+
+            }
+
+            & .styleBtn {
+                @include Displayflex($flex,$Justifyspace-between,$alignCenter,0);
+
+                & .button:hover {
+                    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.3);
+                    position: relative;
+                    bottom: 3px;
+                    cursor: pointer;
+                    // background-color: aquamarine;
+
+                }
+
+                & .button {
+                    font-family: $font;
+                    background-color: rgba(96, 93, 186, 1);
+                    color: white;
+                    margin-top: 40px;
+                    padding: 20px 40px;
+                    border-radius: 10px;
+                    // transition-duration: 2s;
+
+
+                }
+            }
+        }
+
+        & .right_box {
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            position: sticky;
+            // background-color: chartreuse;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            & .small_box:hover {
+                box-shadow: 0px 0px 10px 1px rgb(0, 0, 0,0.1);
+            }
+            & .small_box {
+                width: auto;
+                height: auto;
+                padding: 40px;
+                background-color: rgba(255, 255,255, 1);
+                & .box1_profile {
+                    // background-color: brown;
+                    display: flex;
+                    gap: 30px;
+
+                    & .box1_profile_img {
+                        img {
+                            width: 80px;
+                            height: 65px;
+                            // background-color: aqua;
+                            // border-radius: 50px;
+                        }
+                    }
+
+                    & .box1_profile_name {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        gap: 15px;
+
+                        h3 {
+                            color: $text_color;
+                        }
+
+                        p {
+                            color: $text_color2;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//.....................desktop.......................//
+@include breakpoints ($max_w, $breakpoint-large) {
+    .services {
+        padding: 0px 50px;
+    }
+}
+//.....................tablet.......................//
+@include breakpoints ($max_w, $breakpoint-medium) {
+    .services {
+        & .container {
+            flex-direction: column;
+            & .left_box {
+                position: static;
+            }
+        }
+    }
+}
+//.....................mobiles.......................//
+@include breakpoints ($max_w, $breakpoint-small) {
+    .services {
+        padding: 0px 10px;
+    }
+}
+//.....................small-mobiles.......................//
+@include breakpoints ($max_w, $breakpoint-Xsmall) {
+    .services {
+        & .container {
+            
+            & .right_box {
+                & .small_box{
+                    & .box1_profile{
+                        flex-direction: column;
+                    }
+                }
+            
+            }
+        }
+    }
+}
