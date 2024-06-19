@@ -84,6 +84,7 @@
             // background-color: burlywood;
             padding: 0px;
             & .nevManuFlex {
+            // background-color: burlywood;
                 padding: 25px 10px;
                 display: flex;
                 flex-direction: column;
@@ -99,16 +100,33 @@
                     display: none;
                 }
                 .menu2{
+                    
                     @include Displayflex($flex,$JustifyCenter,0,0);
-
+                    
                     ul{
-                        @include Displayflex($flex,$JustifyCenter,$alignCenter,0);
-                        margin-top: 26px;
-                        width: 80%;
+                        // background-color: burlywood;
+                        // @include Displayflex($flex,$JustifyCenter,$alignCenter,0);
+                        // margin-top: -20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 30px;
+                        width: 100%;
+            // background-color: burlywood;
+                        height:100vh ;
                         flex-direction: column;
                         position: absolute;
-                        color: aliceblue;
-                        background-color: rgba(80, 80, 80,0.9);
+                        color:rgba(80, 80, 80,0.9);
+                        background-color: #FCFCFD;
+                        li {
+                            p{
+                                font-weight: 900;
+                                font-size: x-large;
+                            }
+                            :hover {
+                                scale: 2;
+                            }
+                        }
                     }
                 }
                 .button {
