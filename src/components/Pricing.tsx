@@ -1,7 +1,12 @@
 import React from "react";
 import style from "./Style/pricing.module.scss";
-
+import {useNavigate} from "react-router-dom";
 const Pricing = () => {
+ const navigate = useNavigation();
+
+ const handleContactClick = ()=>{
+	navigate("/Contact")
+ }
   return (
     <div id="Pricing" className={style.pricing}>
       <div className={style.box_h3}>
@@ -46,7 +51,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className={style.btn}>
-            <div className={style.button}>Choose plan</div>
+            <div onClick={handleContactClick} className={style.button}>Choose plan</div>
           </div>
         </div>
         <div className={style.card_2}>
@@ -81,7 +86,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className={style.btn}>
-            <div className={style.button}>Choose plan</div>
+            <div onClick={handleContactClick} className={style.button}>Choose plan</div>
           </div>
         </div>
         <div className={style.card_3}>
@@ -116,7 +121,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className={style.btn}>
-            <div className={style.button}>Choose plan</div>
+            <div onClick={handleContactClick} className={style.button}>Choose plan</div>
           </div>
         </div>
       </div>
