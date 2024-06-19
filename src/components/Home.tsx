@@ -1,7 +1,12 @@
 import React from "react";
 import style from "./Style/home.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleHomeClick = () => {
+    navigate('/Contact'); // Navigate to the home route
+  }
   return (
     <section id="Home" className={style.homepage}>
       <div className={style.centerbtn}><i className={`${style.playIcon} fa fa-play-circle`}></i></div>
@@ -15,7 +20,7 @@ const Home = () => {
             growth
           </p>
           <div className={style.styleBtn}>
-            <div className={style.button}>Get start</div>
+            <div onClick={handleHomeClick} className={style.button}>Get start</div>
             <img src="./pics/arrow.svg" alt="style logo" />
           </div>
         </div>

@@ -1,28 +1,17 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './globle.scss';
-import Home from './components/Home';
-import Process from './components/Process';
-import Textimonial from "./components/Textimonial"
-import Services from './components/Services';
-import Facts from './components/Facts';
-import About from './components/About';
-import Pricing from './components/Pricing';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Contact from './components/Contact'; // Ensure this path and component name are correct
+import MainPage from './components/Mainpage';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Home/>
-      <Process/>
-      <Textimonial/>
-      <Services/>
-      <Facts/>
-      <About/>
-      <Pricing/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

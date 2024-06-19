@@ -1,7 +1,13 @@
 import React from "react";
 import style from "./Style/services.module.scss";
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/Contact'); // Navigate to the contact route
+  }
   return (
     <section id="Services" className={style.services}>
       <div className={style.container}>
@@ -23,7 +29,7 @@ const Services = () => {
             </p>
           </div>
           <div className={style.styleBtn}>
-            <div className={style.button}>More Details</div>
+            <div onClick={handleContactClick} className={style.button}>More Details</div>
           </div>
         </div>
         <div className={style.right_box}>

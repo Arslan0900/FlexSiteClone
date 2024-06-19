@@ -1,0 +1,66 @@
+@import "./animation";
+
+.container {
+  animation: appear 0.5s ease-in-out forwards;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 2rem;
+  padding-top: 100px;
+  color: #343F52;
+  // position: relative;
+  // z-index: 9999999;
+  max-width: 600px;
+  margin: auto; /* Center the container horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add a box shadow for visual effect */
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    width: 100%; /* Ensure form fills container width */
+    max-width: 400px; /* Limit form width for readability */
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 1rem;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea,
+  select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    &:focus {
+      outline: none;
+      border-color: #04AA6D;
+    }
+  }
+
+  input[type="submit"] {
+    background-color:#605DBA;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(70, 115, 217, 1);
+    }
+  }
+}
