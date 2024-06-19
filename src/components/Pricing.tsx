@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Style/pricing.module.scss";
 import {useNavigate} from "react-router-dom";
 const Pricing = () => {
- const navigate = useNavigation();
+  const navigate = useNavigate();
 
  const handleContactClick = ()=>{
 	navigate("/Contact")

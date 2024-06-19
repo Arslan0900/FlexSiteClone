@@ -1,7 +1,13 @@
 import React from "react";
 import style from "./Style/footer.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+ const handleContactClick = ()=>{
+	navigate("/Contact")
+ }
   return (
     <div className={style.footer}>
       <div className={style.container}>
@@ -12,7 +18,7 @@ const Footer = () => {
             </h2>
           </div>
           <div className={style.btn}>
-            <div className={style.button}>Try It For Free</div>
+            <div onClick={handleContactClick} className={style.button}>Try It For Free</div>
           </div>
         </div>
         <div className={style.divider}></div>
